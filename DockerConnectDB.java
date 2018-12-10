@@ -10,6 +10,9 @@ public class DockerConnectDB {
    public static void main(String[] args) {
    Connection conn = null;
    Statement stmt = null;
+   String sqlCreate;
+   String sqlInsert;
+   String sqlSelect;
    try{
       Class.forName("com.mysql.jdbc.Driver");
 
